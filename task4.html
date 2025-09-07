@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduCatalog - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 2em;
+  background: #e2e2e2;
+  text-align: center;
+}
+
+.btn {
+  background: #333;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2em;
+  gap: 1em;
+}
+
+.course-card {
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  background: #eee;
+}
+
+.contact-form {
+  padding: 2em;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.7em;
+}
+
+  </style>
+  <header>
+    <h1>EduCatalog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to EduCatalog</h2>
+    <p>Explore a wide variety of courses tailored to your goals.</p>
+    <a href="courses.html" class="btn">Browse Courses</a>
+  </section>
+
+  <footer>
+    <p>© 2025 EduCatalog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
