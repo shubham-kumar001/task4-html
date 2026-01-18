@@ -1,115 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduCatalog - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Dynamics | Professional Business Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo-icon">N</span>
+                    <span class="logo-text">Nexus<span class="logo-highlight">Dynamics</span></span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#task-manager" class="nav-link">Task Manager</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-primary">Get Started</button>
+                    <div class="mobile-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: #f5f5f5;
-  color: #333;
-}
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforming Businesses with <span class="highlight">Innovative Solutions</span></h1>
+                <p class="hero-subtitle">We provide enterprise-level strategies and tools to help your business thrive in the digital age. Manage tasks efficiently and drive productivity.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large">Start Free Trial</button>
+                    <button class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>2,500+</h3>
+                        <p>Clients Worldwide</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Business Team Collaboration">
+                    <div class="floating-card">
+                        <div class="card-header">
+                            <i class="fas fa-tasks"></i>
+                            <h4>Task Completed</h4>
+                        </div>
+                        <div class="card-content">
+                            <h3>1,248</h3>
+                            <p>This Week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 1em;
-}
+    <!-- Task Management Section -->
+    <section class="task-section" id="task-manager">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Task Management <span class="highlight">Dashboard</span></h2>
+                <p class="section-subtitle">Organize, track, and complete your team's tasks efficiently with our powerful task management system.</p>
+            </div>
+            
+            <div class="task-container">
+                <!-- Task Sidebar -->
+                <div class="task-sidebar">
+                    <div class="task-sidebar-header">
+                        <h3><i class="fas fa-list-check"></i> Task Categories</h3>
+                        <button class="btn-icon" id="add-category-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    
+                    <ul class="task-categories">
+                        <li class="category-item active" data-category="all">
+                            <i class="fas fa-inbox"></i> All Tasks
+                            <span class="task-count">12</span>
+                        </li>
+                        <li class="category-item" data-category="pending">
+                            <i class="fas fa-clock"></i> Pending
+                            <span class="task-count">5</span>
+                        </li>
+                        <li class="category-item" data-category="in-progress">
+                            <i class="fas fa-spinner"></i> In Progress
+                            <span class="task-count">4</span>
+                        </li>
+                        <li class="category-item" data-category="completed">
+                            <i class="fas fa-check-circle"></i> Completed
+                            <span class="task-count">3</span>
+                        </li>
+                        <li class="category-item" data-category="high">
+                            <i class="fas fa-flag"></i> High Priority
+                            <span class="task-count">4</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="task-progress">
+                        <h4>Weekly Progress</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span>75% Complete</span>
+                            <span>9 of 12 tasks</span>
+                        </div>
+                    </div>
+                    
+                    <div class="task-team">
+                        <h4>Team Members</h4>
+                        <div class="team-avatars">
+                            <div class="avatar"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member"></div>
+                            <div class="avatar"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member"></div>
+                            <div class="avatar"><img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Team Member"></div>
+                            <div class="avatar"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Team Member"></div>
+                            <div class="avatar add-member">+</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Task Main Content -->
+                <div class="task-main">
+                    <div class="task-header">
+                        <h3>Today's Tasks</h3>
+                        <div class="task-actions">
+                            <button class="btn btn-outline" id="filter-btn">
+                                <i class="fas fa-filter"></i> Filter
+                            </button>
+                            <button class="btn btn-primary" id="add-task-btn">
+                                <i class="fas fa-plus"></i> Add Task
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="task-filters">
+                        <div class="filter-group">
+                            <label for="sort-by">Sort By:</label>
+                            <select id="sort-by">
+                                <option value="due-date">Due Date</option>
+                                <option value="priority">Priority</option>
+                                <option value="name">Task Name</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="view-type">View:</label>
+                            <select id="view-type">
+                                <option value="list">List View</option>
+                                <option value="grid">Grid View</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="task-list" id="task-list">
+                        <!-- Task items will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Professional</span> Services</h2>
+                <p class="section-subtitle">We offer a comprehensive suite of business solutions to help your organization achieve its goals.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Strategy</h3>
+                    <p>Develop data-driven strategies to drive growth and improve operational efficiency.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Task Management</h3>
+                    <p>Streamline workflows and boost productivity with our advanced task management system.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud-arrow-up"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure, scalable cloud infrastructure to support your business operations.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Protect your data and ensure compliance with industry regulations.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="highlight">Nexus Dynamics</span></h2>
+                    <p>We are a leading business solutions provider with over 15 years of experience helping organizations transform their operations through innovative technology and strategic consulting.</p>
+                    <p>Our team of experts combines deep industry knowledge with cutting-edge tools to deliver measurable results for our clients across the globe.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Industry-Leading Expertise</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Proven Methodology</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Customized Solutions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Customer Support</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary">Learn More About Us</button>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Business Team Meeting">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.hero {
-  padding: 2em;
-  background: #e2e2e2;
-  text-align: center;
-}
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">N</span>
+                        <span class="logo-text">Nexus<span class="logo-highlight">Dynamics</span></span>
+                    </a>
+                    <p>Transforming businesses with innovative solutions and cutting-edge technology since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#task-manager">Task Manager</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Business Strategy</a></li>
+                        <li><a href="#">Task Management</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Security & Compliance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 500</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexusdynamics.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Nexus Dynamics. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-.btn {
-  background: #333;
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-}
+    <!-- Task Modal -->
+    <div class="modal" id="task-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Task</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task-title">Task Title</label>
+                        <input type="text" id="task-title" placeholder="Enter task title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-description">Task Description</label>
+                        <textarea id="task-description" placeholder="Enter task description" rows="3"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-due-date">Due Date</label>
+                            <input type="date" id="task-due-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="task-priority">Priority</label>
+                            <select id="task-priority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-category">Category</label>
+                        <select id="task-category">
+                            <option value="general">General</option>
+                            <option value="meeting">Meeting</option>
+                            <option value="project">Project</option>
+                            <option value="personal">Personal</option>
+                        </select>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-outline close-modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-.course-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 2em;
-  gap: 1em;
-}
-
-.course-card {
-  background: white;
-  padding: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.course-card:hover {
-  background: #eee;
-}
-
-.contact-form {
-  padding: 2em;
-}
-
-form {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 2em;
-  border-radius: 8px;
-}
-
-input, textarea {
-  width: 100%;
-  margin-bottom: 1em;
-  padding: 0.7em;
-}
-
-  </style>
-  <header>
-    <h1>EduCatalog</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Welcome to EduCatalog</h2>
-    <p>Explore a wide variety of courses tailored to your goals.</p>
-    <a href="courses.html" class="btn">Browse Courses</a>
-  </section>
-
-  <footer>
-    <p>© 2025 EduCatalog. All rights reserved.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
